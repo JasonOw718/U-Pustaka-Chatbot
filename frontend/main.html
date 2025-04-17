@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Clone</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="sidebar-backdrop" id="backdrop"></div>
+    <aside class="sidebar" id="sidebar">
+      <section class="section-header">Chat History</section>
+      <button onclick="createNewChatSession()">+</button>
+      <div class="history-container-js">
+        
+      </div>
+      <section class="upgrade-box">
+        <div class="upgrade-icon">⚡</div>
+        <div class="upgrade-text">
+          <h4 class="upgrade-title">Upgrade plan</h4>
+          <p class="upgrade-desc">More access to the best models</p>
+        </div>
+        <button class="question-mark">?</button>
+      </section>
+    </aside>
+
+    <div class="main-content">
+      <header>
+        <div style="display: flex; align-items: center">
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            ☰
+          </button>
+          <button class="header-title">
+            <h1>U-Pustaka</h1>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-left: 5px"
+            >
+              <path d="M8 11L3 6L4 5L8 9L12 5L13 6L8 11Z" fill="white" />
+            </svg>
+          </button>
+        </div>
+        <div class="header-actions">
+          <button class="memory-info">
+            <span>Saved memory full</span>
+            <div class="info-icon">i</div>
+          </button>
+
+          <button class="avatar" aria-label="User profile"></button>
+        </div>
+      </header>
+
+      <main>
+        <h1 class="welcome-text welcome-text-js">What can I help with?</h1>
+        <div class="message-container-js">
+        </div>
+      </main>
+
+      <footer>
+        <form class="input-box" role="search">
+          <div class="input-container">
+            <input
+              type="text"
+              id="chat-input"
+              aria-label="Chat input"
+              placeholder="Ask anything"
+              class="chat-input message-input-js"
+            />
+            <button
+              type="button"
+              aria-label="Add content"
+              class="add-content-button send-button-js"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="10" cy="10" r="9" stroke="white" stroke-width="1" />
+                <path d="M6 10H14" stroke="white" stroke-width="1" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </footer>
+    </div>
+    <script type="module" src="./script/script.js"></script>
+  </body>
+</html>
