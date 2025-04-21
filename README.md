@@ -85,17 +85,8 @@ uvicorn app:app --reload
 
 ### 4. Open `index.html` in your browser
 
-
-## 🤝 Acknowledgements
-
-- [LangChain](https://github.com/langchain-ai/langchain)
-- [Gemini API](https://ai.google.dev/)
-- [FastAPI](https://fastapi.tiangolo.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [U-Pustaka](https://www.u-pustaka.gov.my/)
-
 ## 📬 Contact
 
 **Developer:** Kasheng  
-📧 *your-email@example.com*  
-🌐 *LinkedIn / Portfolio links if any*
+📧 *kashengow@gmail.com*  
+🌐 *https://www.linkedin.com/in/owkasheng*
