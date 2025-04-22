@@ -37,9 +37,9 @@ An intelligent chatbot built to assist users of the U-Pustaka platform by answer
 ```bash
 .
 ├── backend/
-│   ├── app.py                   # FastAPI app with WebSocket support
+│   ├── app.py                   # FastAPI app with routes defined
 │   ├── chat_history.py          # MongoDB session history handling
-│   ├── models.py                # Pydantic models for API schema
+│   ├── models.py                # LLM and embedding model
 │   ├── node.py                  # Node definition for RAG flow
 │   ├── prepare_retriever.py     # Retriever logic for RAG
 │   ├── prompt.py                # Prompt templates for Gemini
