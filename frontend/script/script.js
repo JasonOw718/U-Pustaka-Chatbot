@@ -3,8 +3,13 @@ import {
   getSessionId,
   removeGreeting,
 } from "./util/utils.js";
-import { fetchSessionChatHistory, initChatHistory } from "./chatHistory.js";
+import {
+  deleteChatSession,
+  fetchSessionChatHistory,
+  initChatHistory,
+} from "./chatHistory.js";
 window.createNewChatSession = createNewChatSession;
+window.deleteChatHistory = deleteChatHistory;
 
 function initialize() {
   console.log(getSessionId());
@@ -110,6 +115,14 @@ function initialize() {
 function createNewChatSession() {
   createNewSessionId();
   fetchSessionChatHistory();
+}
+
+function deleteChatHistory(sessionId) {
+  deleteChatSession(sessionId);
+  const historyItem = document.querySelector(`.history-item-container-${sessionId}`);
+  if (historyItem) {
+    historyItem.remove();
+  }
 }
 
 initialize();
